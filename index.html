@@ -13,9 +13,13 @@
       <p class="header-name">Anderson Felipe Paixão Corrêa</p>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">My skills</a></li>
-          <li><a class="main-nav-link" href="#">My projects</a></li>
-          <li><a class="main-nav-link" href="#">About me</a></li>
+          <li><a class="main-nav-link" href="#section-skills">My skills</a></li>
+          <li>
+            <a class="main-nav-link" href="#section-projects">My projects</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#section-about-me">About me</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -26,27 +30,31 @@
         <p>I'm a <em>trainne</em> full-stack web developer.</p>
       </div>
       <div>
-        <img src="/images/Anderson.jpeg" alt="Photo of Anderson Corrêa" />
+        <img
+          src="/images/Anderson.jpeg"
+          alt="Photo of Anderson Corrêa"
+          id="my-photo"
+        />
       </div>
     </section>
 
     <!-- DESCRIPTION SECTION -->
-    <section>
+    <section id="section-about-me">
       <h3>Who's this guy?</h3>
       <h2>About me</h2>
       <p>
-        I'm a Brazilian based freelance full-stack developer, passionate about
-        creating dynamic user experiences.
+        I'm a Brazilian (from Belém-PA) based freelance full-stack developer,
+        passionate about creating dynamic user experiences.
       </p>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section>
+    <section id="section-skills">
       <div>
         <h3>What I can do</h3>
         <h2>My skills</h2>
         <ul>
-          <li>Unix & Bash</li>
+          <li><strong>Unix & Bash</strong></li>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript</li>
@@ -67,15 +75,38 @@
     </section>
 
     <!-- LINKS SECTION -->
-    <section>
+    <section id="section-projects">
       <h3>My accomplishments</h3>
       <h2>My projects</h2>
       <ul>
-        <li><em>Minha foto</em></li>
         <li><strong>Projeto 1</strong>:</li>
         <li><strong>Projeto 2</strong>:</li>
         <li><strong>Projeto 3</strong>:</li>
         <li><strong>Projeto 4</strong>:</li>
+      </ul>
+    </section>
+
+    <!-- LINKS WITH EXTERNAL REFERENCES -->
+    <section>
+      <h3>you might want to check</h3>
+      <h2>Some references</h2>
+      <ul>
+        <li>
+          <a href="https://www.codewars.com/" target="_blank">Codewars</a>
+        </li>
+        <li>
+          <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a>
+        </li>
+        <li>
+          <a href="https://codingheroes.io/index.html" target="_blank"
+            >Codingheroes</a
+          >
+        </li>
+        <li>
+          <a href="https://www.frontendmentor.io/home" target="_blank"
+            >Frontend Mentor</a
+          >
+        </li>
       </ul>
     </section>
 
@@ -86,6 +117,7 @@
         Find-me at: <a href="#">GitHub</a> - <a href="#">Instagram</a> -
         <a href="#">LinkedIn</a>
       </p>
+      <p><a href="#my-photo">My photo</a></p>
     </section>
   </body>
 </html>
