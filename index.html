@@ -11,15 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -61,8 +64,8 @@
 
     <!-- DESCRIPTION SECTION -->
     <section id="section-about-me">
-      <h3>Who's this guy?</h3>
-      <h2>About me</h2>
+      <span class="subheading">About me</span>
+      <h2 class="heading-secondary">Who's this guy?</h2>
       <p>
         I'm a <spa class="green-emphasis">Brazilian</spa> based
         <em>trainee</em> full-stack developer, passionate about creating dynamic
@@ -73,47 +76,151 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="section-skills">
-      <div>
-        <h3>What I can do</h3>
-        <h2>My skills</h2>
-        <ul>
-          <li><strong>Unix & Bash</strong></li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Internet</li>
-        </ul>
+    <section class="section-skills" id="section-skills">
+      <div class="skills-container">
+        <span class="subheading">Skills</span>
+        <h2 class="heading-secondary">What I can do for you</h2>
+        <div class="skills-lists-box">
+          <div>
+            <h3 class="heading-terciary">My <em>hard skills</em></h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon><span>HTML5</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon><span>CSS3</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>JavaScript</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon><span>Git</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>GitHub</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon><span>C#</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Python</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon><span>React</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>NodeJS</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="heading-terciary">My <em>soft skills</em></h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span><strong>Leadership</strong></span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Communication</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Conflict management</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Boldness</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Forgivingness</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Patience</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Risk management</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Emotional inteligence</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon
+                ><span>Quick learner</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="images/Bash-icon-1.png" alt="Bash image" />
-        <img src="images/HTML-icon-1.png" alt="Bash image" />
-        <img src="images/CSS-icon-1.png" alt="Bash image" />
-        <img src="images/JS-icon-1.png" alt="Bash image" />
-        <img src="images/git-img-1.png" alt="Bash image" />
-        <img src="images/github-img-1.png" alt="Bash image" />
-        <img src="images/internet-icon-1.png" alt="Bash image" />
+      <div class="skills-gallery">
+        <img
+          src="images/HTML-icon-1.png"
+          alt="HTML image"
+          class="gallery-item"
+        />
+        <img src="images/CSS-icon-1.png" alt="CSS image" class="gallery-item" />
+        <img
+          src="images/JS-icon-1.png"
+          alt="JavaScript image"
+          class="gallery-item"
+        />
+        <img src="images/git-img-1.png" alt="Git image" class="gallery-item" />
+        <img
+          src="images/github-img-1.png"
+          alt="GitHub image"
+          class="gallery-item"
+        />
+        <img src="images/Csharp-img.png" alt="C# image" class="gallery-item" />
+        <img
+          src="images/python-img.jpeg"
+          alt="Python image"
+          class="gallery-item"
+        />
+        <img
+          src="images/react-img.png"
+          alt="React image"
+          class="gallery-item"
+        />
+        <img
+          src="images/nodejs-img.png"
+          alt="NodeJS image"
+          class="gallery-item"
+        />
       </div>
     </section>
 
     <!-- LINKS SECTION -->
     <section id="section-projects">
-      <h3>My accomplishments</h3>
-      <h2>My projects</h2>
+      <span class="subheading">Projects</span>
+      <h2 class="heading-secondary">My accomplishments</h2>
       <ul>
-        <li><strong>Projeto 1</strong>:</li>
-        <li><strong>Projeto 2</strong>:</li>
-        <li><strong>Projeto 3</strong>:</li>
-        <li><strong>Projeto 4</strong>:</li>
+        <li><strong>Project 1</strong>:</li>
+        <li><strong>Project 2</strong>:</li>
+        <li><strong>Project 3</strong>:</li>
+        <li><strong>Project 4</strong>:</li>
       </ul>
     </section>
 
     <!-- LINKS WITH EXTERNAL REFERENCES -->
     <section>
-      <h3>you might want to check</h3>
-      <h2>Some references</h2>
+      <span class="subheading">References</span>
+      <h2 class="heading-secondary">You might want to check</h2>
       <ul>
         <li>
           <a href="https://www.codewars.com/" target="_blank">Codewars</a>

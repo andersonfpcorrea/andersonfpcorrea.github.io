@@ -95,3 +95,32 @@
   background-size: cover;
   background-position: center;
 }
+
+/* SKILLS SECTION */
+.section-skills {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.skills-container {
+  padding: 9.6rem;
+}
+
+.skills-lists-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+}
+
+.skills-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  align-items: center;
+}
+
+.gallery-item {
+  width: 80%;
+}
