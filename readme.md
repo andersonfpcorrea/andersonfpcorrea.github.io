@@ -12,7 +12,7 @@ Your Portfolio must have the following informations:
 - List of skills, highlighting the one you most proud of;
 - Internal link to your photo;
 - External link to a blog that you like, which must be opened on a new tab;
-- Parts of your portfolio highlighted with <strong></strong> and <em></em>;
+- Parts of your portfolio highlighted with "<strong></strong>" and "<em></em>";
 - An index of internal links for different sections of the portfolio
 
 ### SECOND REQUIREMENTS (B3-D2)
