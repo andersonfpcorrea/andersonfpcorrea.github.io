@@ -36,9 +36,31 @@ body {
   color: #555;
 }
 
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.section-container {
+  padding: 9.6rem 0;
+}
+
+.section-inner-box {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
 .green-emphasis {
   color: #054c37;
   font-weight: 700;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
 
 .heading-primary {
@@ -76,6 +98,10 @@ body {
   letter-spacing: 0.75px;
 }
 
+.heading-center {
+  text-align: center;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -88,4 +114,38 @@ body {
   align-items: center;
   gap: 1.6rem;
   line-height: 1.2;
+}
+
+/* ANIMATIONS */
+/* Progress bars */
+.meter {
+  height: 25px;
+  background-color: #e6f2ef;
+}
+
+.meter div {
+  height: 100%;
+}
+
+.bar-progress {
+  background-color: #054c37;
+  animation: progressBar 10s ease;
+  -webkit-animation: progressBar 10s ease;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

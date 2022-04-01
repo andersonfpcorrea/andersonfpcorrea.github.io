@@ -53,12 +53,6 @@
   color: #e6f2ef;
 }
 
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
-
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -96,13 +90,30 @@
   background-position: center;
 }
 
-/* SKILLS SECTION */
-.section-skills {
+/* DESCRIPTION SECTION */
+.progress-name-bar {
   display: grid;
-  grid-template-columns: 55fr 45fr;
-  align-items: center;
+  grid-template-columns: 20fr 80fr;
 }
 
+.bar-name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  font-size: 1.8rem;
+  font-style: italic;
+  background-color: #b5d9ce;
+  color: #fff;
+  font-weight: 600;
+}
+
+.about-me-container {
+  gap: 9.6rem;
+}
+
+/* SKILLS SECTION */
 .skills-container {
   padding: 9.6rem;
 }
@@ -122,5 +133,7 @@
 }
 
 .gallery-item {
-  width: 80%;
+  width: 65%;
 }
+
+/* PROJECTS SECTION */
