@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson Corrêa</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER SECTION -->
     <header class="header">
-      <p class="header-name">Anderson Felipe Paixão Corrêa</p>
+      <p class="header-name">Trybermann H T Emielle</p>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#section-skills">My skills</a></li>
@@ -24,17 +38,23 @@
       </nav>
     </header>
     <!-- HERO SECTION -->
-    <section>
-      <div>
-        <p>Hello, I'm <strong>Anderson Corrêa</strong>.</p>
-        <p>I'm a <em>trainne</em> full-stack web developer.</p>
-      </div>
-      <div>
-        <img
-          src="/images/Anderson.jpeg"
-          alt="Photo of Anderson Corrêa"
-          id="my-photo"
-        />
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            Hello, I'm <span class="green-emphasis">Trybermann</span>.
+          </h1>
+          <p class="hero-description">
+            I'm a <em>trainne</em> full-stack web developer at <em>Trybe</em>.
+          </p>
+          <a href="#section-projects" class="btn">View my work &DownArrow;</a>
+        </div>
+        <div
+          class="hero-img"
+          role="img"
+          aria-label="Photo of a man's face"
+        ></div>
+        <!-- <img class="hero-img" alt="Photo of Anderson Corrêa" id="my-photo" /> -->
       </div>
     </section>
 
@@ -43,8 +63,11 @@
       <h3>Who's this guy?</h3>
       <h2>About me</h2>
       <p>
-        I'm a Brazilian (from Belém-PA) based freelance full-stack developer,
-        passionate about creating dynamic user experiences.
+        I'm a <spa class="green-emphasis">Brazilian</spa> based
+        <em>trainee</em> full-stack developer, passionate about creating dynamic
+        user experiences. For the past few months, I built my self some projects
+        using HTML, CSS and JS - just for <em>fun</em> - but now I am ready to
+        take this to the next level and become a trully professional.
       </p>
     </section>
 
