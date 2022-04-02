@@ -21,3 +21,13 @@ Your Portfolio must have the following informations:
 - Define a background color to the whole page;
 - Change the styles of important informations (nationality and place of residence);
 - Make each one of the list items (of skills section) have a different font size. Use classes for each element.
+
+### THIRD REQUIREMENTS (B3-D3)
+
+Your portfolio must have a layout using <em>Box Model</em> with the following instructions:
+
+- Put your name, photo and description about you inside blocks;
+- The description must stay <em>beside</em> the photo;
+- Center your name on the page;
+- Add to some elements margin and padding;
+- Style only the odd items of your skills' list.
