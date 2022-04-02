@@ -12,7 +12,7 @@ Bold: 700
 
 -- 02 COLOR SYSTEM
 Text-color: #343a40
-Main green: #054c37
+Main green: #087f5b, #054c37
 Tints: #6bb29d, #b5d9ce, #e6f2ef
 Shades: #02261b, #010d09
 
@@ -118,38 +118,4 @@ body {
 
 .odd-items li:nth-child(odd) {
   font-weight: bold;
-}
-
-/* ANIMATIONS */
-/* Progress bars */
-.meter {
-  height: 25px;
-  background-color: #e6f2ef;
-}
-
-.meter div {
-  height: 100%;
-}
-
-.bar-progress {
-  background-color: #054c37;
-  animation: progressBar 10s ease;
-  -webkit-animation: progressBar 10s ease;
-}
-
-@keyframes progressBar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-webkit-keyframes progressBar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
