@@ -116,6 +116,10 @@ body {
   line-height: 1.2;
 }
 
+.odd-items li:nth-child(odd) {
+  font-weight: bold;
+}
+
 /* ANIMATIONS */
 /* Progress bars */
 .meter {
