@@ -191,7 +191,7 @@
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 9.6em;
+  gap: 6.4rem;
 }
 
 .project-card {
