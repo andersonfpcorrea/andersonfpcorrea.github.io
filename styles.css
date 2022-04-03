@@ -172,13 +172,14 @@
 .skills-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 7.4rem;
+  gap: 3.6rem;
   padding: 1.6rem;
+
   align-items: center;
 }
 
 .gallery-item {
-  width: 100%;
+  width: 70%;
   transition: all 0.4s;
 }
 
