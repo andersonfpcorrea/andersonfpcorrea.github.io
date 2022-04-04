@@ -252,6 +252,43 @@
   color: #010d09;
 }
 
+/* REFERENCES SECTION*/
+
+.links-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+  list-style: none;
+}
+
+.links-gallery-cards {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #e6f2ef;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.links-gallery-cards:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3.2 6.2 rgba(0, 0, 0, 0.6);
+  border: 1px solid #087f5b;
+}
+
+.links-gallery-cards figcaption {
+  background-color: #fff;
+  color: #087f5b;
+  padding: 3px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.links-gallery-img {
+  width: 100%;
+}
+
 /* FOOTER SECTION */
 .footer {
   border-top: 3px solid #b5d9ce;
