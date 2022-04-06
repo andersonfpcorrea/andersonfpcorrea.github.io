@@ -1,0 +1,212 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 16px is 100% of user's font size. */
+  /* 10px is 62.5% of 16px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #222;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+}
+
+.heading__main,
+.heading__sub,
+.heading__sub--aside,
+.header__title {
+  font-family: "Anton", sans-serif;
+}
+
+.heading__main {
+  font-size: 5.2rem;
+  letter-spacing: 1px;
+}
+
+.heading__sub {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.heading__sub--margin-botton {
+  margin-bottom: 4rem;
+}
+
+.space-inter-sections {
+  margin: 12rem 4rem;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.grid-2-cols img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-box {
+  padding: 2rem 2rem;
+  border: 5px solid rgba(180, 180, 132, 0.582);
+  border-radius: 10px;
+  background: linear-gradient(
+    to left bottom,
+    rgba(0, 45, 128, 0.507),
+    rgba(0, 174, 255, 0.3),
+    rgba(0, 47, 255, 0.1),
+    #2ab6c97a
+  );
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card-box p {
+  font-size: 2.4rem;
+}
+
+.small-caption-text {
+  font-size: 1.4rem;
+}
+
+/* SECTION HEADER */
+.header {
+  text-align: center;
+  background-color: #222;
+  padding: 1rem 0;
+}
+
+.header__title {
+  font-size: 6.2rem;
+  letter-spacing: 3px;
+  color: white;
+  padding: 3rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 1.6rem;
+}
+
+.header__link:link,
+.header__link:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(121, 206, 245);
+  transition: all 0.3s;
+}
+
+.header__link:hover,
+.header__link:active {
+  color: #ddd;
+}
+
+/* SECTION SCIENTIFIC CLASSIFICATION */
+
+.table {
+  width: 55%;
+  margin: 0 2rem;
+}
+
+.table caption {
+  display: none;
+}
+
+.table,
+td,
+th {
+  border: 1px solid #333;
+}
+
+.table thead {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+}
+
+.table-categories {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.table-data {
+  text-align: center;
+}
+
+/* REFERENCES SECTION */
+.references__list {
+  list-style: square;
+}
+
+/* SECTION ASIDE */
+.sticky-aside {
+  position: sticky;
+  top: 30px;
+  right: 0;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 3.2rem 1rem;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.sticky-aside:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.5rem 6rem rgba(0, 0, 0, 0.15);
+}
+
+.heading__sub--aside {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.small-caption-text a:link,
+.small-caption-text a:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.small-caption-text a:hover,
+.small-caption-text a:active {
+  color: #fff;
+  background-color: #333;
+  font-weight: 600;
+}
+
+/* FOOTER SECTION */
+.footer {
+  text-align: center;
+  background-color: #222;
+  color: rgb(121, 206, 245);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 8rem 4rem;
+}
