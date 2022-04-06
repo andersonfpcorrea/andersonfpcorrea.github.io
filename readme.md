@@ -1,5 +1,7 @@
 #### Check the portfolio page at: https://andersonfpcorrea.github.io/
 
+### Check my HTML/CSS project (Stomatopoda): https://andersonfpcorrea.github.io/projects/stomatopoda/
+
 #### Check my HTML/CSS project (Lessons Learned): https://andersonfpcorrea.github.io/projects/lessons-learned/
 
 ## THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES DURING MY STUDIES AT TRYBE
