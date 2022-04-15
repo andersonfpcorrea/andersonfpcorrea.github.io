@@ -1,8 +1,8 @@
-#### Check the portfolio page at: https://andersonfpcorrea.github.io/
+#### Check the portfolio _(https://andersonfpcorrea.github.io/)_
 
-#### Check my HTML/CSS project (Stomatopoda): https://andersonfpcorrea.github.io/projects/stomatopoda/
+#### Check my HTML/CSS project (Lessons Learned)_(https://andersonfpcorrea.github.io/projects/lessons-learned/)_
 
-#### Check my HTML/CSS project (Lessons Learned): https://andersonfpcorrea.github.io/projects/lessons-learned/
+#### Check my JavaScript project (Playground functions)_(https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/playground-functions)_
 
 ## THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES DURING MY STUDIES AT TRYBE
 
