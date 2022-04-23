@@ -2,7 +2,9 @@
 
 #### Check my HTML/CSS project: _[Lessons Learned](https://andersonfpcorrea.github.io/projects/lessons-learned/)_
 
-#### Check my JavaScript project: _[Playground functions](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/playground-functions)_
+#### Check my JavaScript projects:
+
+- _[Playground functions](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/playground-functions)_
 
 ## THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES DURING MY STUDIES AT TRYBE
 
