@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.ball-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
