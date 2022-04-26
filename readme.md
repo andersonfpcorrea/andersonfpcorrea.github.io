@@ -1,8 +1,6 @@
-#### Check the _[portfolio](https://andersonfpcorrea.github.io/)_
+#### Check the _[portfolio](https://andersonfpcorrea.github.io/)_ : THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES.
 
 ### You can check all my projects completed during my trainnig at _[Trybe](https://www.betrybe.com/)_ at this repository.
-
-## THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES DURING MY STUDIES AT TRYBE
 
 ### My projects so far:
 
