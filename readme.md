@@ -1,39 +1,15 @@
 #### Check the _[portfolio](https://andersonfpcorrea.github.io/)_
 
-#### Check my HTML/CSS project: _[Lessons Learned](https://andersonfpcorrea.github.io/projects/lessons-learned/)_
-
-#### Check my JavaScript projects:
-
-- _[Playground functions](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/playground-functions)_
+### You can check all my projects completed during my trainnig at _[Trybe](https://www.betrybe.com/)_ at this repository.
 
 ## THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES DURING MY STUDIES AT TRYBE
 
-### FIRST REQUIREMENTS (B3-D1)
+### My projects so far:
 
-Your Portfolio must have the following informations:
-
-- Complete name;
-- Recent photo (with alt text);
-- Brief description of yourself (with nationality, place of residence);
-- List of skills, highlighting the one you most proud of;
-- Internal link to your photo;
-- External link to a blog that you like, which must be opened on a new tab;
-- Parts of your portfolio highlighted with "strong" and "em" tags;
-- An index of internal links for different sections of the portfolio.
-
-### SECOND REQUIREMENTS (B3-D2)
-
-- Define and use different font-types for your name and for your description;
-- Define a background color to the whole page;
-- Change the styles of important informations (nationality and place of residence);
-- Make each one of the list items (of skills section) have a different font size. Use classes for each element.
-
-### THIRD REQUIREMENTS (B3-D3)
-
-Your portfolio must have a layout using <em>Box Model</em> with the following instructions:
-
-- Put your name, photo and description about you inside blocks;
-- The description must stay <em>beside</em> the photo;
-- Center your name on the page;
-- Add to some elements margin and padding;
-- Style only the odd items of your skills' list.
+- [ :heavy_check_mark: ] 3-5: _[Projeto - HTML & CSS - Lessons Learned](https://andersonfpcorrea.github.io/projects/lessons-learned/)_
+- [ :heavy_check_mark: ] 4-5: _[Projeto - Playground Functions](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/playground-functions)_
+- [ :heavy_check_mark: ] 5-5: _[Projeto - Arte com Pixels](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/pixels-art)_
+- [ :heavy_check_mark: ] 5-6: _[Projeto - Lista de Tarefas](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/todo-list)_
+- [ :heavy_check_mark: ] 5-7: _[Projeto - Meme Generator](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/meme-generator)_
+- [ :heavy_check_mark: ] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/color-guess)_
+- [ :heavy_check_mark: ] 5-7: _[Projeto - Carta Misteriosa](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/mistery-letter-project)_
