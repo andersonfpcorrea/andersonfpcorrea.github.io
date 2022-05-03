@@ -17,7 +17,7 @@ body {
 
 @media (min-width: 1270px) {
   body {
-    max-height: 98vh;
+    max-height: 100vh; /*ATUALIZAÇÃO*/
     overflow: hidden;
   }
 }
@@ -51,13 +51,6 @@ main {
 @media (min-width: 990px) {
   .header__name {
     outline: 0;
-  }
-}
-
-@media (min-width: 1270px) {
-  .header__name {
-    font-size: 10rem;
-    padding: 2.4rem;
   }
 }
 
@@ -233,6 +226,13 @@ hero section layout is redefined */
   }
 }
 
+/* @media (min-width: 1270px) {
+  .hero__tags {
+    place-content: center;
+    height: 65%;
+  }
+} */ /*ATUALIZAÇÃO*/
+
 /* ******************* */
 .hero__tags p {
   padding: 1.8rem 2.4rem;
@@ -299,32 +299,37 @@ hero section layout is redefined */
 /* =================== */
 .hero__image {
   overflow: hidden;
+  position: relative;
+  height: 50vh;
+  border-top: 1px solid #f69494;
+  border-bottom: 1px solid #f69494;
 }
 
 .hero__image--img {
+  position: absolute; /*ATUALIZAÇÃO*/
+  display: inline-block;
   width: 100%;
+  height: 100%; /*ATUALIZAÇÃO*/
   object-fit: cover;
-  /* outline: 1px solid #f69494; */
   vertical-align: middle;
 }
 /* ******************* */
 @media (min-width: 990px) {
   .hero__image--img {
-    border: 1px solid #f69494;
-    transform: scale(1);
-    max-height: 66rem;
+    border-right: 1px solid #f69494;
+    border-left: 1px solid #f69494;
+    border-top: 0;
+    border-bottom: 0;
   }
-}
-
-/* Small asjusts for screens larger than 1270px */
-@media (min-width: 1270px) {
-  .hero__image--img {
-    max-height: 63rem;
+  .hero__image {
+    overflow: hidden;
+    position: relative; /*ATUALIZAÇÃO*/
+    height: 100%; /*ATUALIZAÇÃO*/
   }
 }
 
 /* =================== */
-/* Hero__left */
+/* Hero__left & hero__right */
 /* =================== */
 .hero__left,
 .hero__right {
@@ -351,9 +356,21 @@ hero section layout is redefined */
 
 @media (min-width: 1270px) {
   .footer {
-    padding: 2.8rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1484px) {
+  .footer {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 1650px) {
+  .footer {
+    padding: 3.6rem;
   }
 }
 
@@ -413,9 +430,5 @@ hero section layout is redefined */
     justify-content: flex-start;
     align-items: center;
     gap: 4rem;
-  }
-
-  .aside::before {
-    content: "";
   }
 }
