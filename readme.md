@@ -1,4 +1,4 @@
-#### Check the _[portfolio](https://andersonfpcorrea.github.io/)_ : THIS WEBPAGE WAS BUILT FOR TRAINNING PURPOSES.
+#### Check the _[portfolio](https://andersonfpcorrea.github.io/)_
 
 ### You can check all my projects completed during my trainnig at _[Trybe](https://www.betrybe.com/)_ at this repository.
 
