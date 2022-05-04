@@ -6,13 +6,18 @@
 
 html {
   font-size: 62.5%;
+  --text-primary: #f69494;
+  --text-secondary: rgba(246, 148, 148, 0.3);
+  --bg-primary: #0e332f;
+  --bg-secondary: rgba(14, 51, 47, 0.3);
 }
 
 body {
-  background-color: #0e332f;
-  color: #f69494;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   font-family: sans-serif;
   font-size: 2.4rem;
+  position: relative;
 }
 
 @media (min-width: 1270px) {
@@ -22,19 +27,41 @@ body {
   }
 }
 
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+}
+
 main {
   line-height: 1.4;
 }
 
 /* =================== */
-/* Header */
+/* Header name */
 /* =================== */
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header__name {
   padding: 3.6rem;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 8vw;
+}
+
+.header__name p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 480px) {
@@ -55,9 +82,61 @@ main {
 }
 
 /* ******************* */
+
+/* =================== */
+/* Header navs */
+/* =================== */
 .header__nav {
-  border: 1px solid #f69494;
+  border-top: 1px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
   text-transform: uppercase;
+}
+
+/* =================== */
+/* NAV OVERLAY FOR MOBILE SCREENS */
+/* =================== */
+/* Dynnamic nav menu for mobile screens
+This nav is supposed to appear up until 990px of
+screen width. By default this nav is hidden.
+It also will only appear upon clicking on the 
+'sanswich btn'. */
+.header__nav-overlay {
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-5px);
+  background-color: var(--bg-primary);
+}
+
+/*This class is toggled for opening the nav bar*/
+.nav-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header__nav-overlay--ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.header__nav-overlay--li {
+  display: block;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.header__nav-overlay--li a:link,
+.header__nav-overlay--li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 2.8rem;
 }
 
 @media (max-width: 990px) {
@@ -66,6 +145,23 @@ main {
   }
 }
 
+/* =================== */
+/* MOBILE NAV OVERLAY FOR SCREENS LESS THAN 480PX */
+/* =================== */
+@media (max-width: 480px) {
+  .header__nav-overlay--li {
+    padding: 1.6rem 0;
+  }
+
+  .header__nav-overlay--li a:link,
+  .header__nav-overlay--li a:visited {
+    font-size: 2.4rem;
+  }
+}
+
+/* =================== */
+/* MAIN MOBILE HEADER NAV LI */
+/* =================== */
 /* ******************* */
 .header__nav--li {
   display: flex;
@@ -75,8 +171,8 @@ main {
 /* ******************* */
 .header__nav--li-page {
   padding: 1.8rem 2.4rem;
-  border: 1px dashed #f69494;
-  background-color: #f69494;
+  border: 1px dashed var(--text-primary);
+  background-color: var(--text-primary);
   color: #0e332f;
   font-size: 1.8rem;
   font-weight: 500;
@@ -101,9 +197,13 @@ main {
 
 .header__nav--li-page:hover {
   background-color: inherit;
-  color: #f69494;
+  color: var(--text-primary);
 }
 /* ******************* */
+
+/* =================== */
+/* MAIN MOBILE HEADER NAV BUTTON */
+/* =================== */
 .header__nav--li-btn {
   padding: 1.6rem;
   display: flex;
@@ -131,16 +231,21 @@ main {
   cursor: pointer;
 }
 
+/* =================== */
 /*+++ Nav for screens larger than 990px +++*/
+/* =================== */
+
 @media (min-width: 990px) {
   .header__nav {
+    /*"header__nav" is the mobile nav*/
     display: none;
   }
   .header__nav2--ul {
+    /*"header__nav2" is the non-mobile nav*/
     display: flex;
     justify-content: space-between;
     list-style: none;
-    outline: 1px solid #f69494;
+    outline: 1px solid var(--text-primary);
   }
 
   .header__nav2--li a:link,
@@ -154,17 +259,23 @@ main {
     transition: all 0.3s;
   }
 
-  .skew {
-    display: inline-block;
-    transition: all 0.3s;
-  }
-
-  .skew:hover {
-    transform: skew(0deg, -10deg);
+  .header__nav-overlay--hidden {
+    display: none; /*Dynamic nav bar is not applicable for non mobile devices*/
   }
 }
 
-/* ******************* */
+/* =================== */
+/* Skew effect for the NAV BARS */
+/* =================== */
+.skew {
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.skew:hover {
+  transform: skew(0deg, -10deg);
+}
+
 /* =================== */
 /* Hero description*/
 /* =================== */
@@ -207,7 +318,7 @@ hero section layout is redefined */
   grid-template-columns: repeat(6, 1fr);
   gap: 1.8rem;
   text-align: center;
-  outline: 1px solid #f69494;
+  outline: 1px solid var(--text-primary);
 }
 
 @media (max-width: 480px) {
@@ -222,16 +333,9 @@ hero section layout is redefined */
 @media (min-width: 990px) {
   .hero__tags {
     outline: 0;
-    border-top: 1px solid #f69494;
+    border-top: 1px solid var(--text-primary);
   }
 }
-
-/* @media (min-width: 1270px) {
-  .hero__tags {
-    place-content: center;
-    height: 65%;
-  }
-} */ /*ATUALIZAÇÃO*/
 
 /* ******************* */
 .hero__tags p {
@@ -286,14 +390,14 @@ hero section layout is redefined */
 }
 /* ******************* */
 .hero__tags--square {
-  outline: 1px solid #f69494;
+  outline: 1px solid var(--text-primary);
 }
 /* ******************* */
 .hero__tags--round {
-  outline: 1px solid #f69494;
+  outline: 1px solid var(--text-primary);
   border-radius: 50px;
 }
-/* ******************* */
+
 /* =================== */
 /* Hero image */
 /* =================== */
@@ -301,30 +405,30 @@ hero section layout is redefined */
   overflow: hidden;
   position: relative;
   height: 50vh;
-  border-top: 1px solid #f69494;
-  border-bottom: 1px solid #f69494;
+  border-top: 1px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
 }
 
 .hero__image--img {
-  position: absolute; /*ATUALIZAÇÃO*/
+  position: absolute;
   display: inline-block;
   width: 100%;
-  height: 100%; /*ATUALIZAÇÃO*/
+  height: 100%;
   object-fit: cover;
   vertical-align: middle;
 }
 /* ******************* */
 @media (min-width: 990px) {
   .hero__image--img {
-    border-right: 1px solid #f69494;
-    border-left: 1px solid #f69494;
+    border-right: 1px solid var(--text-primary);
+    border-left: 1px solid var(--text-primary);
     border-top: 0;
     border-bottom: 0;
   }
   .hero__image {
     overflow: hidden;
-    position: relative; /*ATUALIZAÇÃO*/
-    height: 100%; /*ATUALIZAÇÃO*/
+    position: relative;
+    height: 100%;
   }
 }
 
@@ -341,7 +445,7 @@ hero section layout is redefined */
 /* Footer */
 /* =================== */
 .footer {
-  outline: 1px solid #f69494;
+  outline: 1px solid var(--text-primary);
   font-size: 1.8rem;
   padding: 3.6rem;
   text-align: center;
@@ -392,7 +496,7 @@ hero section layout is redefined */
 /* ******************* */
 
 /* =================== */
-/* Aside */
+/* Aside (less than 990px width screens) */
 /* =================== */
 /* +++ Aside for screens bellow 990px width +++ */
 .aside {
@@ -412,8 +516,9 @@ hero section layout is redefined */
     brightness(103%) contrast(91%);
 }
 
-/* ******************* */
+/* =================== */
 /* +++ Aside for screens larger than 990px width +++ */
+/* =================== */
 @media (min-width: 990px) {
   body {
     display: grid;
@@ -421,7 +526,7 @@ hero section layout is redefined */
   }
 
   body div {
-    outline: 1px solid #f69494;
+    outline: 1px solid var(--text-primary);
   }
 
   .aside {
