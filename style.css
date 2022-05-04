@@ -9,11 +9,11 @@ html {
   --text-primary: #f69494;
   --text-secondary: rgba(246, 148, 148, 0.3);
   --bg-primary: #0e332f;
-  --bg-secondary: rgba(14, 51, 47, 0.3);
+  --bg-secondary: rgba(5, 20, 19, 0.452);
 }
 
 body::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -27,7 +27,8 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.4rem;
   position: relative;
 }
@@ -169,6 +170,7 @@ It also will only appear upon clicking on the
 }
 /* ******************* */
 .header__nav--li-page {
+  cursor: default;
   padding: 1.8rem 2.4rem;
   border: 1px dashed var(--text-primary);
   background-color: var(--text-primary);
@@ -454,10 +456,11 @@ hero section layout is redefined */
   .footer {
     padding: 2.4rem;
     outline: 0;
+    border-bottom: 1px solid var(--text-primary);
   }
 }
 
-@media (min-width: 1270px) {
+@media (min-width: 990px) {
   .footer {
     display: flex;
     justify-content: space-between;
@@ -481,9 +484,8 @@ hero section layout is redefined */
 .footer__email:link,
 .footer__email:active {
   text-decoration: none;
+  border-bottom: 1px solid var(--text-primary);
   color: inherit;
-  opacity: 0.7;
-  font-size: 1.4rem;
   transition: all 0.3s;
 }
 
@@ -504,15 +506,15 @@ hero section layout is redefined */
   justify-content: space-around;
 }
 
+.svg-color {
+  filter: invert(88%) sepia(34%) saturate(4182%) hue-rotate(301deg)
+    brightness(103%) contrast(91%);
+}
+
 @media (max-width: 480px) {
   .aside {
     padding: 1.8rem;
   }
-}
-
-.svg-color {
-  filter: invert(88%) sepia(34%) saturate(4182%) hue-rotate(301deg)
-    brightness(103%) contrast(91%);
 }
 
 /* =================== */
@@ -524,7 +526,7 @@ hero section layout is redefined */
     grid-template-columns: 1fr 8.4rem;
   }
 
-  body div {
+  body div:first-child {
     outline: 1px solid var(--text-primary);
   }
 
@@ -536,3 +538,162 @@ hero section layout is redefined */
     gap: 4rem;
   }
 }
+
+/* ====================== */
+/* +++++++++++++++++++ */
+/* PROFILE PAGE */
+/* ====================== */
+/* +++++++++++++++++++ */
+
+/* The following styles are applicable for screen sizes less than 480px */
+
+.hero__description--bio {
+  margin-bottom: 3.6rem;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+}
+
+.hero__bio {
+  outline: 1px solid var(--text-primary);
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.hero__image--profile {
+  height: 30vh;
+}
+
+.experience__list {
+  padding: 1.8rem;
+  border-top: 1px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.experience__list--li {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px dotted var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__list--li p:nth-child(2) {
+  opacity: 0.5;
+}
+
+@media (min-width: 480px) {
+  .hero__description--bio {
+    font-size: 4.8rem;
+  }
+
+  .hero__bio {
+    padding: 3.6rem;
+    gap: 3.6rem;
+    font-size: 2.4rem;
+  }
+
+  .hero__image--profile {
+    height: 40vh;
+  }
+
+  .experience__list {
+    padding: 3.6rem 3.6rem 7.2rem 3.6rem;
+    gap: 2.4rem;
+    list-style: none;
+    font-size: 2.4rem;
+  }
+
+  .experience__list--li {
+    padding-bottom: 3.6rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 770px) {
+  .hero__description--bio {
+    margin-bottom: 9rem;
+    font-size: 5.4rem;
+  }
+
+  .hero__image--profile {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 990px) {
+  .page-selected {
+    display: inline-block;
+    transform: skew(0deg, -10deg);
+    border-bottom: 1px solid var(--text-primary);
+    font-style: italic;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bio {
+    border-bottom: 1px solid var(--text-primary);
+  }
+
+  .hero__description--bio {
+    font-size: 5.4rem;
+  }
+
+  .hero__bio {
+    outline: 0;
+    border-left: 1px solid var(--text-primary);
+  }
+
+  .hero__image.hero__image--profile {
+    height: 75vh;
+    border: 0;
+  }
+
+  .hero__image--img.hero__image--img-profile {
+    border: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1.1fr 1.9fr;
+    border-top: 1px solid var(--text-primary);
+  }
+
+  .hero__tags.hero__tags--profile {
+    border-top: 0;
+    border-left: 1px solid var(--text-primary);
+  }
+
+  .experience__list {
+    border-top: 0;
+    border-left: 1px solid var(--text-primary);
+  }
+
+  .aside-profile {
+    position: fixed;
+    padding: 3rem;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1270px) {
+  .hero__image.hero__image--profile {
+    height: 100vh;
+  }
+}
+
+/* TO be continued:
+- Adjust the height of the sections to 100vh;
+- Make the sections titles move along
+- Fix the header
+- Make the tag on the aside
+- Make the cursor circle */
