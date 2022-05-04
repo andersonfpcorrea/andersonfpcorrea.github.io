@@ -12,6 +12,18 @@ html {
   --bg-secondary: rgba(14, 51, 47, 0.3);
 }
 
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -23,20 +35,7 @@ body {
 @media (min-width: 1270px) {
   body {
     max-height: 100vh; /*ATUALIZAÇÃO*/
-    overflow: hidden;
   }
-}
-
-body::-webkit-scrollbar {
-  width: 0.6rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--text-secondary);
 }
 
 main {
