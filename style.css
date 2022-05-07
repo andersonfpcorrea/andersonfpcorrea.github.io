@@ -694,9 +694,49 @@ hero section layout is redefined */
   }
 }
 
+/* TODO: */
 /* TO be continued:
 - Adjust the height of the sections to 100vh;
-- Make the sections titles move along
 - Fix the header
-- Make the tag on the aside
-- Make the cursor circle */
+- Make the tag on the aside */
+
+/* ====================== */
+/* +++++++++++++++++++ */
+/* PROFILE PAGE */
+/* ====================== */
+/* +++++++++++++++++++ */
+
+/* The following styles are applicable for screen sizes less than 480px */
+.section-work {
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.section-work__div {
+  padding: 1.2rem;
+}
+
+.section-work__h1 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.section-work__tags-div {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.section-work__tags-div--tag {
+  border: 1px solid var(--text-primary);
+  border-radius: 30px;
+  padding: 1rem 1.8rem;
+  font-size: 1.8rem;
+}
+
+.section-work__img {
+  max-width: 100%;
+  opacity: 0.5;
+  filter: saturate(0%);
+}
