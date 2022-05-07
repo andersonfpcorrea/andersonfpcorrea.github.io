@@ -713,12 +713,25 @@ hero section layout is redefined */
 
 .section-work__div {
   padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.6rem;
 }
 
-.section-work__h1 {
+.section-work__h1 a:link,
+.section-work__h1 a:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   font-size: 3.6rem;
   line-height: 4.4rem;
-  margin-bottom: 3.6rem;
+  transition: all 0.3s;
+}
+
+.section-work__h1 a:hover,
+.section-work__h1 a:active {
+  opacity: 0.5;
 }
 
 .section-work__tags-div {
