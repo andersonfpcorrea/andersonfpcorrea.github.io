@@ -721,12 +721,11 @@ hero section layout is redefined */
 
 .section-work__h1 a:link,
 .section-work__h1 a:visited {
-  display: block;
   text-decoration: none;
   color: inherit;
   font-size: 3.6rem;
   line-height: 4.4rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .section-work__h1 a:hover,
