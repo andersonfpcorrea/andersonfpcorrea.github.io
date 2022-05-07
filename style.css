@@ -749,6 +749,5 @@ hero section layout is redefined */
 
 .section-work__img {
   max-width: 100%;
-  opacity: 0.5;
-  filter: saturate(0%);
+  opacity: 0.8;
 }
