@@ -700,12 +700,6 @@ hero section layout is redefined */
   }
 }
 
-/* TODO: */
-/* TO be continued:
-- Adjust the height of the sections to 100vh;
-- Fix the header
-- Make the tag on the aside */
-
 /* ====================== */
 /* +++++++++++++++++++ */
 /* PROFILE PAGE */
@@ -757,3 +751,9 @@ hero section layout is redefined */
   max-width: 100%;
   opacity: 0.8;
 }
+
+/* TODO: */
+/* TO be continued:
+- Adjust the height of the sections to 100vh;
+- Make the tag on the aside 
+- Continue the style (spacings) of works page*/
