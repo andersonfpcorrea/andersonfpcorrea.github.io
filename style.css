@@ -428,7 +428,7 @@ hero section layout is redefined */
 /* ******************* */
 @media (min-width: 990px) {
   .hero__image--img {
-    border-right: 1px solid var(--text-primary);
+    /* border-right: 1px solid var(--text-primary); */
     border-left: 1px solid var(--text-primary);
     border-top: 0;
     border-bottom: 0;
@@ -533,7 +533,7 @@ hero section layout is redefined */
     grid-template-columns: 1fr 8.4rem;
   }
 
-  body div:first-child {
+  .body-left {
     outline: 1px solid var(--text-primary);
   }
 
