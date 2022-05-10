@@ -14,11 +14,11 @@ btn.addEventListener('click', () => {
 // as follows:
 const header = document.querySelector('.header');
 const headerName = document.querySelector('.header__name');
-const portWidth = window.visualViewport;
+const portView = window.visualViewport;
 // Event listener on visualViewport interface
-portWidth.addEventListener('resize', () => {
+portView.addEventListener('resize', () => {
   // If viewport width is higher than 990px:
-  if (portWidth.width >= 990) {
+  if (portView.width >= 990) {
     // Get the computed height property of ".header__name"
     const headerHeight = window
       .getComputedStyle(headerName)
@@ -26,5 +26,21 @@ portWidth.addEventListener('resize', () => {
     // Assign to .header to property 'top' equals to the
     // height of '.header__name':
     header.style.top = `-${headerHeight}`;
+  }
+});
+
+// Tag on scroll
+const topBtn = document.querySelector('.top-btn');
+
+window.addEventListener('scroll', () => {
+  console.log('pagetop is: ' + portView.pageTop);
+  const headerHeight = window
+    .getComputedStyle(headerName)
+    .getPropertyValue('height');
+  console.log(`header height is: ${headerHeight}`);
+  if (portView.pageTop > parseInt(headerHeight)) {
+    topBtn.style.opacity = '1';
+  } else {
+    topBtn.style.opacity = '0';
   }
 });
