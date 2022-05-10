@@ -35,7 +35,14 @@ window.addEventListener('scroll', () => {
   const headerHeight = window
     .getComputedStyle(headerName)
     .getPropertyValue('height');
+  if (portView.width < 990) {
+    topBtn.style.display = 'none';
+  }
+  if (portView.width >= 990) {
+    topBtn.style.display = 'block';
+  }
   if (portView.pageTop > parseInt(headerHeight)) {
+    console.log(portView.width);
     topBtn.style.opacity = '1';
   } else {
     topBtn.style.opacity = '0';

@@ -514,6 +514,10 @@ hero section layout is redefined */
   justify-content: space-around;
 }
 
+.top-btn {
+  opacity: 0;
+}
+
 .svg-color {
   filter: invert(88%) sepia(34%) saturate(4182%) hue-rotate(301deg)
     brightness(103%) contrast(91%);
