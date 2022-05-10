@@ -562,7 +562,7 @@ hero section layout is redefined */
 
 .hero__bio {
   outline: 1px solid var(--text-primary);
-  padding: 1.8rem;
+  padding: 1.8rem 1.8rem 6.2rem 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
@@ -573,8 +573,12 @@ hero section layout is redefined */
   height: 30vh;
 }
 
+.hero__tags--profile {
+  padding: 1.8rem 1.8rem 6.2rem 1.8rem;
+}
+
 .experience__list {
-  padding: 1.8rem;
+  padding: 1.8rem 1.8rem 6.2rem 1.8rem;
   border-top: 1px solid var(--text-primary);
   border-bottom: 1px solid var(--text-primary);
   display: flex;
@@ -601,7 +605,7 @@ hero section layout is redefined */
   }
 
   .hero__bio {
-    padding: 3.6rem;
+    padding: 3.6rem 3.6rem 9.2rem 3.6rem;
     gap: 3.6rem;
     font-size: 2.4rem;
   }
@@ -610,8 +614,12 @@ hero section layout is redefined */
     height: 40vh;
   }
 
+  .hero__tags--profile {
+    padding: 3.6rem 3.6rem 9.2rem 3.6rem;
+  }
+
   .experience__list {
-    padding: 3.6rem 3.6rem 7.2rem 3.6rem;
+    padding: 3.6rem 3.6rem 9.2rem 3.6rem;
     gap: 2.4rem;
     list-style: none;
     font-size: 2.4rem;
@@ -630,8 +638,20 @@ hero section layout is redefined */
     font-size: 5.4rem;
   }
 
+  .hero__bio {
+    padding-bottom: 12.6rem;
+  }
+
   .hero__image--profile {
     height: 60vh;
+  }
+
+  .hero__tags--profile {
+    padding-bottom: 12.6rem;
+  }
+
+  .experience__list {
+    padding-bottom: 12.6rem;
   }
 }
 
@@ -661,6 +681,7 @@ hero section layout is redefined */
   .hero__bio {
     outline: 0;
     border-left: 1px solid var(--text-primary);
+    height: 75vh;
   }
 
   .hero__image.hero__image--profile {
@@ -672,19 +693,31 @@ hero section layout is redefined */
     border: 0;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr fill;
+  .hero__image--img.hero__image--img-profile.experience-img {
     border-top: 1px solid var(--text-primary);
+    border-bottom: 1px solid var(--text-primary);
+  }
+
+  .skills-grid {
+    grid-template-columns: 0.9fr auto;
+    border-top: 1px solid var(--text-primary);
+    height: 80vh;
   }
 
   .hero__tags.hero__tags--profile {
     border-top: 0;
     border-left: 1px solid var(--text-primary);
+    grid-template-rows: repeat(5, 7rem);
+  }
+
+  .hero__tags.hero__tags--profile p {
+    height: fit-content;
   }
 
   .experience__list {
     border-top: 0;
     border-left: 1px solid var(--text-primary);
+    height: 80vh;
   }
 
   .aside-profile {
@@ -697,6 +730,10 @@ hero section layout is redefined */
 @media (min-width: 1270px) {
   .hero__image.hero__image--profile {
     height: 100vh;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1.1fr 0.9fr;
   }
 }
 
@@ -754,6 +791,5 @@ hero section layout is redefined */
 
 /* TODO: */
 /* TO be continued:
-- Adjust the height of the sections to 100vh;
 - Make the tag on the aside 
 - Continue the style (spacings) of works page*/
