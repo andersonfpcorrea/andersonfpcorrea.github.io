@@ -31,13 +31,10 @@ portView.addEventListener('resize', () => {
 
 // Tag on scroll
 const topBtn = document.querySelector('.top-btn');
-
 window.addEventListener('scroll', () => {
-  console.log('pagetop is: ' + portView.pageTop);
   const headerHeight = window
     .getComputedStyle(headerName)
     .getPropertyValue('height');
-  console.log(`header height is: ${headerHeight}`);
   if (portView.pageTop > parseInt(headerHeight)) {
     topBtn.style.opacity = '1';
   } else {
