@@ -777,14 +777,16 @@ hero section layout is redefined */
 
 .section-work {
   border-bottom: 1px solid var(--text-primary);
+  padding: 1.8rem;
 }
 
 .section-work__div {
-  padding: 1.2rem;
+  padding: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3.6rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .section-work__h1 a:link,
@@ -821,6 +823,57 @@ hero section layout is redefined */
   opacity: 0.8;
 }
 
-/* TODO: */
-/* TO be continued:
-- Continue the style (spacings) of works page*/
+@media (min-width: 480px) {
+  .section-work {
+    padding: 4.2rem;
+  }
+
+  .section-work__div {
+    padding: 1.8rem;
+  }
+
+  .section-work__h1 a:link {
+    font-size: 4.8rem;
+  }
+
+  .footer {
+    padding: 3.6rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .section-work {
+    padding: 0;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+
+  .section-work__div {
+    padding: 2.8rem;
+    gap: 1.8rem;
+  }
+
+  .section-work__h1 a:link {
+    font-size: 5.4rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .section-work {
+    padding: 7.2rem 3.6rem;
+
+    display: flex;
+  }
+
+  .section-work__div {
+    padding: 0;
+    flex-basis: 50%;
+    gap: 3.6rem;
+    justify-content: end;
+    align-items: flex-start;
+  }
+
+  .section-work__div.work-img {
+    padding: 0;
+  }
+}
