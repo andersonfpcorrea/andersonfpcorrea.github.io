@@ -878,4 +878,8 @@ hero section layout is redefined */
   }
 }
 
-/* TODO: add a link on the img of the works */
+/* TODO: 
+- add a link on the img of the works
+- fix bankist app:
+ -- labelWelcome on closing account is not been updated
+ -- deploy on another site: github pages is breaking the page */
