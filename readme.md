@@ -12,3 +12,4 @@
 - [ :heavy_check_mark: ] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/color-guess)_
 - [ :heavy_check_mark: ] 5-7: _[Projeto - Carta Misteriosa](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/mistery-letter-project)_
 - [ :heavy_check_mark: ] 6-6: _[Projeto - Trybewarts](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/trybe-projects/trybewarts)_
+- [ :heavy_check_mark: ] 7-4: _[Projeto - JavaScript em Testes Unitários](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/tree/master/projects/trybe-projects/project-js-unit-tests)_
