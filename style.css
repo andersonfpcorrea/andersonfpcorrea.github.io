@@ -902,3 +902,126 @@ hero section layout is redefined */
 /* +++++++++++++++++++ */
 
 /* The following styles are applicable for screen sizes less than 480px */
+/* and larger than 230px */
+
+.hero__description.hero__description--contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.hero__description.hero__description--contact p {
+  margin: 0;
+}
+
+.hero__description.hero__description--contact {
+  padding: 3.6rem 1.8rem;
+  text-align: left;
+}
+
+.hero__description.hero__description--contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.contact-email-link {
+  font-size: 1.4rem;
+  color: inherit;
+}
+
+.hero__bio.contact-forms {
+  padding: 3.6rem 1.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  text-transform: uppercase;
+}
+
+.inputs {
+  width: 100%;
+  background-color: transparent;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: var(--text-secondary);
+  transition: all 0.3s;
+  color: inherit;
+  font-size: 2.4rem;
+}
+
+.inputs:hover {
+  border-bottom-color: var(--text-primary);
+}
+
+.submit-btn {
+  padding: 1.8rem 2.4rem;
+  border: none;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--text-primary);
+  outline: 1px dashed var(--text-primary);
+}
+
+@media (min-width: 300px) {
+  .contact-email-link {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .contact-email-link {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .hero__description.hero__description--contact {
+    padding: 4.2rem;
+  }
+
+  .contact-email-link {
+    font-size: 2.8rem;
+  }
+
+  .hero__bio.contact-forms {
+    padding: 3.6rem;
+    font-size: 2.4rem;
+  }
+
+  .submit-btn {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .contact-email-link {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .grid-2.contact {
+    display: flex;
+  }
+
+  .hero__bio.contact-forms {
+    flex-basis: 100%;
+  }
+
+  .submit-btn {
+    padding: 2rem 2.4rem;
+    font-size: 2.8rem;
+  }
+}

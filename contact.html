@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <title>Anderson</title>
   </head>
-  <body>
+  <body id="body">
     <div class="body-left">
       <header class="header">
         <a href="index.html">
@@ -20,11 +24,11 @@
             <p>Corrêa</p>
           </div>
         </a>
-        <!-- Nav bar sandwitch for mobile screens -->
+        <!-- Nav bar for mobile screens -->
         <nav class="header__nav">
           <ul>
             <li class="header__nav--li">
-              <p class="header__nav--li-page">Home</p>
+              <p class="header__nav--li-page">Contact</p>
               <div class="header__nav--li-btn">
                 <span>&mdash;&mdash;</span>
                 <span>&mdash;&mdash;</span>
@@ -34,6 +38,7 @@
           </ul>
         </nav>
         <!-- Nav bar for screens larger than 990px -->
+
         <nav class="header__nav2">
           <ul class="header__nav2--ul">
             <li class="header__nav2--li">
@@ -46,7 +51,7 @@
               <a href="#"><span class="skew">Journal</span></a>
             </li>
             <li class="header__nav2--li">
-              <a href="contact.html"><span class="skew">Contact</span></a>
+              <a href="#"><span class="page-selected">Contact</span></a>
             </li>
           </ul>
         </nav>
@@ -55,7 +60,7 @@
         <nav class="header__nav-overlay">
           <ul class="header__nav-overlay--ul">
             <li class="header__nav-overlay--li">
-              <a href="profile.html"><span class="skew">Profile</span></a>
+              <a href="#"><span class="skew">Profile</span></a>
             </li>
             <li class="header__nav-overlay--li">
               <a href="works.html"><span class="skew">Work</span></a>
@@ -70,35 +75,69 @@
         </nav>
       </header>
       <main class="main">
-        <section class="hero">
-          <div class="hero__left">
-            <article class="hero__description">
-              <p>
-                I am a passionate for portuguese poetry, a world-wide seafarer,
-                and a
-                <strong>full-stack web developer</strong> currently living in
-                Belém, Brazil.
+        <section class="grid-2 contact bio">
+          <article class="hero__description hero__description--contact">
+            <p class="hero__description--bio">Contact</p>
+            <div>
+              <p class="hero__bio--p">
+                Contact-me via the form on this page, or just drop me an email.
               </p>
-            </article>
-            <article class="hero__tags">
-              <p class="hero__tags--square larger-tag">HTML5</p>
-              <p class="hero__tags--round larger-tag2">CSS3</p>
-              <p class="hero__tags--square smaller-tag1">JS</p>
-              <p class="hero__tags--round smaller-tag2">Git</p>
-              <p class="hero__tags--square smaller-tag3">Writer</p>
-              <p class="hero__tags--round larger-tag">Dad</p>
-              <p class="hero__tags--square larger-tag2">Mariner</p>
-            </article>
-          </div>
-          <div class="hero__right">
-            <article class="hero__image">
-              <img
-                src="img/5.jpg"
-                alt="Anderson's photo"
-                class="hero__image--img"
-              />
-            </article>
-          </div>
+              <a
+                href="emailto:andersonfpcorrea@gmail.com"
+                class="contact-email-link"
+                >andersonfpcorrea@gmail.com</a
+              >
+            </div>
+          </article>
+          <article class="hero__bio contact-forms">
+            <form action="" class="form">
+              <div>
+                <label for="first-name">First name *</label>
+                <input
+                  class="inputs"
+                  type="text"
+                  id="first-name"
+                  maxlength="256"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last-name">Last name *</label>
+                <input
+                  class="inputs"
+                  type="text"
+                  id="last-name"
+                  maxlength="256"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">email *</label>
+                <input
+                  class="inputs"
+                  type="email"
+                  id="email"
+                  maxlength="256"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input class="inputs" type="tel" id="phone" maxlength="256" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="2"
+                  maxlength="500"
+                  class="inputs"
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
+          </article>
         </section>
       </main>
       <footer class="footer">
@@ -108,8 +147,8 @@
         >
       </footer>
     </div>
-    <div>
-      <aside class="aside">
+    <div class="sticky-aside">
+      <aside class="aside aside-profile">
         <a href="https://github.com/andersonfpcorrea"
           ><img
             src="img/iconmonstr-github-1.svg"
