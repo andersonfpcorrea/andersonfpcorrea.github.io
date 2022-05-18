@@ -901,8 +901,12 @@ hero section layout is redefined */
 /* ====================== */
 /* +++++++++++++++++++ */
 
-/* The following styles are applicable for screen sizes less than 480px */
-/* and larger than 230px */
+/* This page was created using the mobile-first paradigm */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
 
 .hero__description.hero__description--contact {
   display: flex;

@@ -90,7 +90,7 @@
             </div>
           </article>
           <article class="hero__bio contact-forms">
-            <form action="" class="form">
+            <form action="#" class="form" name="contact-form" netlify>
               <div>
                 <label for="first-name">First name *</label>
                 <input
@@ -98,6 +98,7 @@
                   type="text"
                   id="first-name"
                   maxlength="256"
+                  name="first-name"
                   required
                 />
               </div>
@@ -108,6 +109,7 @@
                   type="text"
                   id="last-name"
                   maxlength="256"
+                  name="last-name"
                   required
                 />
               </div>
@@ -118,12 +120,19 @@
                   type="email"
                   id="email"
                   maxlength="256"
+                  name="email"
                   required
                 />
               </div>
               <div>
                 <label for="phone">Phone</label>
-                <input class="inputs" type="tel" id="phone" maxlength="256" />
+                <input
+                  class="inputs"
+                  type="tel"
+                  id="phone"
+                  maxlength="256"
+                  name="tel"
+                />
               </div>
               <div>
                 <label for="message">Message</label>
@@ -133,6 +142,7 @@
                   rows="2"
                   maxlength="500"
                   class="inputs"
+                  name="message"
                 ></textarea>
               </div>
               <button type="submit" class="submit-btn">Send</button>
