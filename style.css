@@ -820,7 +820,14 @@ hero section layout is redefined */
 
 .section-work__img {
   max-width: 100%;
+  opacity: 0.7;
+  /* filter: saturate(0); */
+  transition: all 0.5s;
+}
+
+.section-work__img:hover {
   opacity: 0.8;
+  filter: none;
 }
 
 @media (min-width: 480px) {
@@ -861,25 +868,30 @@ hero section layout is redefined */
 @media (min-width: 990px) {
   .section-work {
     padding: 7.2rem 3.6rem;
-
+    gap: 2.4rem;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   .section-work__div {
     padding: 0;
-    flex-basis: 50%;
     gap: 3.6rem;
-    justify-content: end;
     align-items: flex-start;
   }
 
   .section-work__div.work-img {
+    flex-basis: 60%;
     padding: 0;
   }
-}
 
-/* TODO: 
-- add a link on the img of the works
-- fix bankist app:
- -- labelWelcome on closing account is not been updated
- -- deploy on another site: github pages is breaking the page */
+  .section-work__img {
+    opacity: 0.5;
+    filter: saturate(0);
+  }
+
+  .section-work__img:hover {
+    opacity: 0.7;
+    filter: none;
+  }
+}
