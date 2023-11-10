@@ -4,7 +4,7 @@
 
 ![image](https://github.com/andersonfpcorrea/andersonfpcorrea.github.io/assets/92505216/e08ff376-8166-466a-9756-66e4eccad003)
 
-This is a multipage portfolio page built with HTML, CSS, and Javascript (no frameworks/libraries).
+This is a multipage portfolio website built with HTML, CSS, and Javascript (no frameworks/libraries).
 
 **Routes**:
 - [Home](https://portfolio-andersonfpcorrea.netlify.app/)
